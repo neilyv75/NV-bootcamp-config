@@ -58,16 +58,27 @@ bootstrap:
     # Support multiple CDF Projects, like dev/test/prod in one config.
         - cdf-project: cdf-bootcamp-71-test # i.e. bootcamp-01-test
           mappings:
-              - cdf-group: cdf:root
-                idp-source-id: a82c121e-11b0-457e-b204-4cbc0b77ff9e
-                idp-source-name: bootcamp-71-test-admin
-              - cdf-group: cdf:all:owner
-                idp-source-id: d21a982d-a651-4e4c-a451-96fc66bb98d3 # for the AAD Group to be matched to cdf-group
-                idp-source-name: bootcamp-71-test-all-owner # i.e. bootcamp-01-test-all-owner
-              - cdf-group: cdf:all:read
-                idp-source-id: 71334fe5-027a-48f5-af20-6f24ed685c85 # for the AAD Group to be matched to cdf-group
-                idp-source-name: bootcamp-71-test-all-read # i.e. bootcamp-01-test-all-read
-
+            - cdf-group: cdf:root
+              idp-source-id: c57f6f76-aef7-49cf-928f-740c928aa7ac
+              idp-source-name: bootcamp-71-test-admin
+            - cdf-group: cdf:all:owner
+              idp-source-id: 9aeb0860-1b3b-48bb-8a45-8508634d00e9 # for the AAD Group to be matched to cdf-group
+              idp-source-name: bootcamp-71-test-all-owner # i.e. bootcamp-01-test-all-owner
+            - cdf-group: cdf:all:read
+              idp-source-id: cfd3ad15-7bb2-4097-bd57-d73c9936210d # for the AAD Group to be matched to cdf-group
+              idp-source-name: bootcamp-71-test-all-read # i.e. bootcamp-01-test-all-read
+                
+        - cdf-project: cdf-bootcamp-71-prod
+          mappings:
+            - cdf-group: cdf:root
+              idp-source-id: 67574bd7-1a07-48e0-8b81-985aa41299bb
+              idp-source-name: bootcamp-71-prod-admin
+            - cdf-group: cdf:all:owner
+              idp-source-id: 48b07a41-9447-4efb-980b-ab934f632de6
+              idp-source-name: bootcamp-71-prod-all-owner
+            - cdf-group: cdf:all:read
+              idp-source-id: 6042aa7f-8fdf-4db6-9d60-9873a571acdd
+              idp-source-name: bootcamp-71-prod-all-read
 
     namespaces:
         # Typical config will have a namespace for data sources ("src") and a namespace for use cases ("uc")
@@ -117,4 +128,3 @@ logger:
         level: INFO
     console:
         level: INFO
-
