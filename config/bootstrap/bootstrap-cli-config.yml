@@ -87,7 +87,7 @@ bootstrap:
 
         # Description names will normally follow src:001:srcname or uc:001:usecasename naming convention
         ns-nodes:
-            - node-name: uc:001:oee
+          - node-name: uc:001:oee
             description: Use case 001 Over all Equipment effectiveness
             shared-access:
                 read:
