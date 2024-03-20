@@ -9,6 +9,7 @@ on:
             - config/bootstrap/**
             - .github/workflows/deploy-bootstrap-cli.yaml
 
+
 jobs:
     bootstrap_cdf:
         name: Bootstrap CDF
